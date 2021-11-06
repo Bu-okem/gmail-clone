@@ -16,3 +16,10 @@ const navSlide = function () {
 }
 
 navSlide();
+
+
+const mail = document.getElementById("mail");
+
+mail.onclick = function () {
+    window.location.href="./pages/index.html";
+}
