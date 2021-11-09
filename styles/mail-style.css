@@ -1,0 +1,166 @@
+:root {
+  --icon-colour: #4b4b4b;
+}
+
+@font-face {
+  font-family: "product-sans";
+  src: url(../assets/Product\ Sans\ Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "product-sans", sans-serif;
+}
+
+html,
+body {
+  position: fixed;
+  overflow: hidden;
+}
+
+body > .mainwrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  padding-top: 10px;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  top: 70px;
+}
+
+.icons svg {
+  fill: var(--icon-colour);
+}
+
+.right-header {
+  display: flex;
+  justify-content: space-around;
+  width: 48%;
+  max-width: 183px;
+}
+
+.mail-top {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  max-width: 80vw;
+  margin-left: 0.7em;
+}
+
+.title-text {
+  width: 93%;
+}
+
+.title h2 {
+  font-weight: 400;
+  margin-right: 0.5em;
+}
+
+.title p {
+  border: solid 1px #e0e0e0;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  padding-inline: 0.15em;
+  background-color: #e0e0e0;
+}
+
+.star {
+  width: 9%;
+}
+
+.mail-body {
+  position: relative;
+  top: 40px;
+}
+
+.mail-body-header {
+  display: flex;
+  margin-inline: 0.7em;
+  justify-content: space-between;
+}
+
+.picture-text {
+  display: flex;
+}
+
+.mail-body-header-text {
+  display: flex;
+  width: fit-content;
+  position: relative;
+  margin-inline: 0.2em;
+}
+
+.picture img {
+  height: 36px;
+  width: 36px;
+  background-color: #966944;
+  border-radius: 20px;
+}
+
+.author {
+  width: fit-content;
+  height: 50%;
+  max-width: 54vw;
+  margin-inline: 0.35em;
+}
+
+.author h4 {
+  font-weight: 100;
+  word-wrap: break-word;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: var(--icon-colour);
+  position: relative;
+  top: 2px;
+}
+
+.recipient {
+  display: flex;
+  position: absolute;
+  top: 60%;
+  left: 6px;
+  font-size: 0.8rem;
+  color: var(--icon-colour);
+  fill: var(--icon-colour);
+}
+
+.recipient svg {
+  height: 16px;
+  width: 17px;
+  fill: inherit;
+}
+
+.mail-body-header-icons.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 55px;
+}
+
+.mail-body-header-icons svg:nth-child(1) {
+  transform: rotateY(180deg);
+}
